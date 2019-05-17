@@ -1,0 +1,34 @@
+<p>
+  visualization works!
+</p>
+
+<h1>Visualización</h1>
+<h2>Elegí la/s características que queres ver</h2>
+
+
+<h3>Tipo de cuerpo</h3>
+<button (click)="onClickTipoCuerpo('fit')" [ngClass]="{selected: tipoDeCuerpo.indexOf('fit')!=-1}">fit</button>
+<button (click)="onClickTipoCuerpo('muy delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('muy delgada')!=-1}">muy delgada</button>
+<button (click)="onClickTipoCuerpo('delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('delgada')!=-1}">delgada</button>
+<button (click)="onClickTipoCuerpo('mediana')" [ngClass]="{selected: tipoDeCuerpo.indexOf('mediana')!=-1}">mediana</button>
+<button (click)="onClickTipoCuerpo('gorda')" [ngClass]="{selected: tipoDeCuerpo.indexOf('gorda')!=-1}">gorda</button>
+<button (click)="onClickTipoCuerpo('con curvas')" [ngClass]="{selected: tipoDeCuerpo.indexOf('con curvas')!=-1}">curvy</button>
+
+<h3>Color de piel</h3>
+<button (click)="onClickColorDePiel('blanco')" [ngClass]="{selected: colorDePiel.indexOf('blanco')!=-1}">blanca</button>
+<button (click)="onClickColorDePiel('cafe claro')" [ngClass]="{selected: colorDePiel.indexOf('cafe claro')!=-1}">cafe claro</button>
+<button (click)="onClickColorDePiel('cafe medio')" [ngClass]="{selected: colorDePiel.indexOf('cafe medio')!=-1}">cafe medio</button>
+
+<h3>Características de la piel</h3>
+<button (click)="onClickPiel('lunar')" [ngClass]="{selected: pielV.indexOf('lunar')!=-1}">lunar</button>
+<button (click)="onClickPiel('grano')" [ngClass]="{selected: pielV.indexOf('grano')!=-1}">grano</button>
+<button (click)="onClickPiel('ojeras')" [ngClass]="{selected: pielV.indexOf('ojeras')!=-1}">ojeras</button>
+<button (click)="onClickPiel('rosacea')" [ngClass]="{selected: pielV.indexOf('rosacea')!=-1}">rosacea</button>
+<button (click)="onClickPiel('mancha solar')" [ngClass]="{selected: pielV.indexOf('mancha solar')!=-1}">mancha solar</button>
+<button (click)="onClickPiel('mancha')" [ngClass]="{selected: pielV.indexOf('mancha')!=-1}">mancha</button>
+<button (click)="onClickPiel('pecas')" [ngClass]="{selected: pielV.indexOf('pecas')!=-1}">pecas</button>
+<button (click)="onClickPiel('bolsas')" [ngClass]="{selected: pielV.indexOf('bolsas')!=-1}">bolsas</button>
+
+
+
+<img *ngFor="let photo of photos"  src="./assets/img-girls/{{photo.url}}" />

@@ -1,0 +1,24 @@
+$light:#ffffff;
+$dark:#000;
+
+#home{
+    background-image: url("../../assets/img-girls/montage-sing.jpg");
+   
+   
+    .container{
+        background-color: $light;
+        padding: 5%;
+        align-content: center;
+
+        h1,h2{
+            color: $dark;
+            
+        }
+
+        a{
+            margin-right: 4px;
+        }
+    }
+    
+}
+

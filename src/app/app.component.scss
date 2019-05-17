@@ -1,0 +1,12 @@
+$light:hsl(0, 0%, 96%);
+$dark:hsl(0, 0%, 4%);
+
+
+nav {
+    padding-left: 50px;
+    a:hover{
+        background-color:$dark;
+        color:$light;
+    }
+}
+
