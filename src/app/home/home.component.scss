@@ -1,24 +1,96 @@
 $light:#ffffff;
 $dark:#000;
+$medium: #4a4a4a;
+$regular_padding: 5%;
 
+
+
+
+.button{
+    margin: 10px 10px 4px 0;
+    
+}
 #home{
     background-image: url("../../assets/img-girls/montage-sing.jpg");
    
    
     .container{
         background-color: $light;
-        padding: 5%;
-        align-content: center;
+        padding: $regular_padding;
+        
 
         h1,h2{
             color: $dark;
             
         }
+        
+       
 
-        a{
-            margin-right: 4px;
-        }
+        
     }
     
 }
 
+
+#project{
+
+    .container{
+        margin: 3%; 
+        div{
+            overflow: hidden;
+        
+            div{
+                
+                h1{
+                    margin: 0 0 5% 0;
+                }
+                a{
+
+                    padding: 10px;
+                   
+                }
+                ul{
+                    list-style: disc;    
+                    margin: 3%;
+    
+                   
+                    li{
+                        a{
+                            color: $medium;
+                            //padding: 3%;
+                            
+    
+                            &:hover{
+    
+                                text-decoration: underline;
+                                color: $dark;
+    
+                            }
+    
+    
+                        }
+                    }
+                }
+    
+                
+            }
+
+           
+        }
+
+        div:nth-child(2){
+
+            margin:2%;
+            //background-image: url("../../assets/img-girls/montage-sing.jpg");
+            background-color: $medium;
+           p{
+            color: $light;
+           }
+            
+
+        }
+        
+    }
+    
+   
+}

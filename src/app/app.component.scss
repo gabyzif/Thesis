@@ -1,9 +1,14 @@
-$light:hsl(0, 0%, 96%);
-$dark:hsl(0, 0%, 4%);
+$light:#fff;
+$dark:#000;
 
 
 nav {
+    position:fixed;
     padding-left: 50px;
+    z-index: 99;
+    background-color:$light; 
+    width: 100%;
+    border-bottom: 3px solid;
     a:hover{
         background-color:$dark;
         color:$light;
