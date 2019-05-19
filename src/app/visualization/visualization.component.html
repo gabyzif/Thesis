@@ -1,34 +1,75 @@
-<p>
-  visualization works!
-</p>
 
-<h1>Visualización</h1>
-<h2>Elegí la/s características que queres ver</h2>
+<section class="section has-navbar-fixed-top" id="home">
+    <div class="hero-body">
+      <div class="container">
+          <h1 class="title">Visualización</h1>
+          <h2 class="subtitle">Elegí la/s características que queres ver</h2>
+          
+          
+          <div class="columns">
+            <div class="column">
 
-
-<h3>Tipo de cuerpo</h3>
-<button (click)="onClickTipoCuerpo('fit')" [ngClass]="{selected: tipoDeCuerpo.indexOf('fit')!=-1}">fit</button>
-<button (click)="onClickTipoCuerpo('muy delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('muy delgada')!=-1}">muy delgada</button>
-<button (click)="onClickTipoCuerpo('delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('delgada')!=-1}">delgada</button>
-<button (click)="onClickTipoCuerpo('mediana')" [ngClass]="{selected: tipoDeCuerpo.indexOf('mediana')!=-1}">mediana</button>
-<button (click)="onClickTipoCuerpo('gorda')" [ngClass]="{selected: tipoDeCuerpo.indexOf('gorda')!=-1}">gorda</button>
-<button (click)="onClickTipoCuerpo('con curvas')" [ngClass]="{selected: tipoDeCuerpo.indexOf('con curvas')!=-1}">curvy</button>
-
-<h3>Color de piel</h3>
-<button (click)="onClickColorDePiel('blanco')" [ngClass]="{selected: colorDePiel.indexOf('blanco')!=-1}">blanca</button>
-<button (click)="onClickColorDePiel('cafe claro')" [ngClass]="{selected: colorDePiel.indexOf('cafe claro')!=-1}">cafe claro</button>
-<button (click)="onClickColorDePiel('cafe medio')" [ngClass]="{selected: colorDePiel.indexOf('cafe medio')!=-1}">cafe medio</button>
-
-<h3>Características de la piel</h3>
-<button (click)="onClickPiel('lunar')" [ngClass]="{selected: pielV.indexOf('lunar')!=-1}">lunar</button>
-<button (click)="onClickPiel('grano')" [ngClass]="{selected: pielV.indexOf('grano')!=-1}">grano</button>
-<button (click)="onClickPiel('ojeras')" [ngClass]="{selected: pielV.indexOf('ojeras')!=-1}">ojeras</button>
-<button (click)="onClickPiel('rosacea')" [ngClass]="{selected: pielV.indexOf('rosacea')!=-1}">rosacea</button>
-<button (click)="onClickPiel('mancha solar')" [ngClass]="{selected: pielV.indexOf('mancha solar')!=-1}">mancha solar</button>
-<button (click)="onClickPiel('mancha')" [ngClass]="{selected: pielV.indexOf('mancha')!=-1}">mancha</button>
-<button (click)="onClickPiel('pecas')" [ngClass]="{selected: pielV.indexOf('pecas')!=-1}">pecas</button>
-<button (click)="onClickPiel('bolsas')" [ngClass]="{selected: pielV.indexOf('bolsas')!=-1}">bolsas</button>
+                <h3>Tipo de cuerpo</h3>
 
 
+                <input type="image" (click)="onClickTipoCuerpo('fit')" [ngClass]="{selected: tipoDeCuerpo.indexOf('fit')!=-1}" src="../../assets/visualization/fit.png">
+                <input type="image" src="../../assets/visualization/muyflaca.png" (click)="onClickTipoCuerpo('muy delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('muy delgada')!=-1}">
+                <input type="image" src="../../assets/visualization/flaca.png" (click)="onClickTipoCuerpo('delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('delgada')!=-1}">
+                <input type="image" src="../../assets/visualization/mediana.png" (click)="onClickTipoCuerpo('mediana')" [ngClass]="{selected: tipoDeCuerpo.indexOf('mediana')!=-1}">
+                <input type="image" src="../../assets/visualization/gorda.png" (click)="onClickTipoCuerpo('gorda')" [ngClass]="{selected: tipoDeCuerpo.indexOf('gorda')!=-1}">
+                <input type="image"  src="../../assets/visualization/curvas.png" (click)="onClickTipoCuerpo('con curvas')" [ngClass]="{selected: tipoDeCuerpo.indexOf('con curvas')!=-1}">
 
-<img *ngFor="let photo of photos"  src="./assets/img-girls/{{photo.url}}" />
+
+            </div>
+
+
+            <div class="column">
+
+                <h3>Color de piel</h3>
+
+                
+
+                <button (click)="onClickColorDePiel('blanco')" [ngClass]="{selected: colorDePiel.indexOf('blanco')!=-1}">
+                  <svg width="50" height="50">
+                    <rect width="50" height="50" style="fill:#FCE4D5;" />
+                  </svg></button>
+                <button (click)="onClickColorDePiel('cafe claro')" [ngClass]="{selected: colorDePiel.indexOf('cafe claro')!=-1}">
+                  <svg width="50" height="50">
+                    <rect width="50" height="50" style="fill:#FFBF99;" />
+                  </svg></button>
+                <button (click)="onClickColorDePiel('cafe medio')" [ngClass]="{selected: colorDePiel.indexOf('cafe medio')!=-1}">
+                    <svg width="50" height="50">
+                        <rect width="50" height="50" style="fill:#AF8270;" />
+                      </svg>
+                </button>
+                
+            </div>
+
+            <div class="column">
+
+                <h3>Características de la piel</h3>
+                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('lunar')" [ngClass]="{selected: pielV.indexOf('lunar')!=-1}">
+                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('grano')" [ngClass]="{selected: pielV.indexOf('grano')!=-1}">
+                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('ojeras')" [ngClass]="{selected: pielV.indexOf('ojeras')!=-1}">
+                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('rosacea')" [ngClass]="{selected: pielV.indexOf('rosacea')!=-1}">
+                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('mancha solar')" [ngClass]="{selected: pielV.indexOf('mancha solar')!=-1}">
+                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('mancha')" [ngClass]="{selected: pielV.indexOf('mancha')!=-1}">
+                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('pecas')" [ngClass]="{selected: pielV.indexOf('pecas')!=-1}">
+                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('bolsas')" [ngClass]="{selected: pielV.indexOf('bolsas')!=-1}">
+                
+                
+                
+            </div>
+
+          </div>
+          
+          
+         
+          <img *ngFor="let photo of photos"  src="./assets/img-girls/{{photo.url}}" />
+      </div>
+
+     
+    </div>
+</section>
+
+
