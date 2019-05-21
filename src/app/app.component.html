@@ -1,17 +1,28 @@
 
+<nav #mobile class="navbar mobile" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
 
-<nav class="navbar">
-    <a class="navbar-item" routerLinkActive="active-link" [routerLink]="['home']">Home</a>
-    <a class="navbar-item"  routerLinkActive="active-link" [routerLink]="['project']">Proyecto</a>
-    <a class="navbar-item"  routerLinkActive="active-link" [routerLink]="['project']">Proceso</a>
+    <a role="button" #navBurger  (click)="toggleNavbar()" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu" #navMenu> 
+    <div class="navbar-start">
+
+      <a class="navbar-item" routerLinkActive="active-link" [routerLink]="['home']">Home</a>
+      <a class="navbar-item" fragment="project" routerLinkActive="active-link" [routerLink]="['project']">Proyecto</a>
+      <a class="navbar-item"  routerLinkActive="active-link" [routerLink]="['project']">Proceso</a>
     <a class="navbar-item" routerLinkActive="active-link" [routerLink]="['visualization']">Visualizacion</a>    
     <a class="navbar-item" routerLinkActive="active-link" [routerLink]="['visualization']">Resultados</a>    
     <a class="navbar-item" routerLinkActive="active-link" [routerLink]="['visualization']">Contacto</a>    
+    </div>
+  </div>
 </nav>
 
-  
-
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>
 
 
 <footer class="footer">
