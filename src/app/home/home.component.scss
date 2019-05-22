@@ -1,9 +1,18 @@
 $light:#ffffff;
 $dark:#000;
 $medium: #4a4a4a;
+$violet:#572086;
 $regular_padding: 5%;
 
+.container{
+    margin: 3%;
+}
 
+.subtitle{
+  
+    padding: 1% 0;
+
+}
 
 
 .button{
@@ -23,6 +32,8 @@ $regular_padding: 5%;
             color: $dark;
             
         }
+
+       
         
        
 
@@ -35,7 +46,8 @@ $regular_padding: 5%;
 #project{
 
     .container{
-        margin: 3%; 
+        margin: 5% 3% 3% 3%; 
+        
         div{
             overflow: hidden;
         
@@ -55,6 +67,7 @@ $regular_padding: 5%;
     
                    
                     li{
+                        margin: 3%;
                         a{
                             color: $medium;
                             //padding: 3%;
@@ -63,7 +76,7 @@ $regular_padding: 5%;
                             &:hover{
     
                                 text-decoration: underline;
-                                color: $dark;
+                                color: $violet;
     
                             }
     
@@ -96,6 +109,12 @@ $regular_padding: 5%;
 }
 
 #process{
+
+   /* background-color: $violet;
+
+    h1,h2,h3,p,a,i{
+        color: $light;
+    }*/
 
     nav{
         margin: 3%;

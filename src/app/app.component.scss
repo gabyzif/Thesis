@@ -13,6 +13,19 @@ nav {
         background-color:$dark;
         color:$light;
     }
+
+    #drop:hover{
+        background-color:$dark;
+        color:$light;
+    }
+
+    .navbar-link:not(.is-arrowless)::after {
+        border-color:  #9548d6;;
+
+       
+    }
+
+    
 }
 
 @media (max-width:600px) {
@@ -24,6 +37,14 @@ nav {
         a:hover{
             background-color:$dark;
             color:$light;
+        }
+
+        div{
+            a{
+                background-color:$dark;
+                color:$light;
+
+            }
         }
     }
 
