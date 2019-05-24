@@ -8,6 +8,30 @@ img {
     width: 50px;
 }
 
+
+.big-img{
+    display: block;
+    
+    .img{
+        margin: 0;
+       overflow: hidden;
+       width: 180px;
+    }
+    
+
+    .img:not(:first-child) {
+        margin-left: -4px;
+      }
+    
+    
+    .img:nth-last-of-type(2){	
+        float: left;
+    }
+    
+    
+}
+
+
 .columns{
 
     h3{

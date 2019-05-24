@@ -6,19 +6,30 @@
           <h2 class="subtitle">Elegí la/s características que queres ver</h2>
           
           
-          <div class="columns">
-            <div class="column">
-
+          <div class="columns ">
+            <div class="column is-gapless ">
                 <h3>Tipo de cuerpo</h3>
 
+                <div class="big-img flexbox">
+                    <div class="img">
+                        <input type="image" (click)="onClickTipoCuerpo('fit')" [ngClass]="{selected: tipoDeCuerpo.indexOf('fit')!=-1}" src="../../assets/visualization/fit.png">
+                        <input type="image" src="../../assets/visualization/muyflaca.png" (click)="onClickTipoCuerpo('muy delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('muy delgada')!=-1}">
+                        <input type="image" src="../../assets/visualization/flaca.png" (click)="onClickTipoCuerpo('delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('delgada')!=-1}">
+                    </div><div class="img">
 
-                <input type="image" (click)="onClickTipoCuerpo('fit')" [ngClass]="{selected: tipoDeCuerpo.indexOf('fit')!=-1}" src="../../assets/visualization/fit.png">
-                <input type="image" src="../../assets/visualization/muyflaca.png" (click)="onClickTipoCuerpo('muy delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('muy delgada')!=-1}">
-                <input type="image" src="../../assets/visualization/flaca.png" (click)="onClickTipoCuerpo('delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('delgada')!=-1}">
-                <input type="image" src="../../assets/visualization/mediana.png" (click)="onClickTipoCuerpo('mediana')" [ngClass]="{selected: tipoDeCuerpo.indexOf('mediana')!=-1}">
-                <input type="image" src="../../assets/visualization/gorda.png" (click)="onClickTipoCuerpo('gorda')" [ngClass]="{selected: tipoDeCuerpo.indexOf('gorda')!=-1}">
-                <input type="image"  src="../../assets/visualization/curvas.png" (click)="onClickTipoCuerpo('con curvas')" [ngClass]="{selected: tipoDeCuerpo.indexOf('con curvas')!=-1}">
+                        <input type="image" src="../../assets/visualization/mediana.png" (click)="onClickTipoCuerpo('mediana')" [ngClass]="{selected: tipoDeCuerpo.indexOf('mediana')!=-1}">
+                        <input type="image" src="../../assets/visualization/gorda.png" (click)="onClickTipoCuerpo('gorda')" [ngClass]="{selected: tipoDeCuerpo.indexOf('gorda')!=-1}">
+                        <input type="image"  src="../../assets/visualization/curvas.png" (click)="onClickTipoCuerpo('con curvas')" [ngClass]="{selected: tipoDeCuerpo.indexOf('con curvas')!=-1}">
+                        <input type="image"  src="../../assets/visualization/curvas.png" (click)="onClickTipoCuerpo('con curvas')" [ngClass]="{selected: tipoDeCuerpo.indexOf('con curvas')!=-1}">
 
+                    </div>
+                </div>
+              
+
+
+
+
+              
 
             </div>
 
