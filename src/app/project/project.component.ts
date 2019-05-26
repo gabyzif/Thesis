@@ -201,259 +201,112 @@ export class ProjectComponent {
         
         });
      
-        this.zone.runOutsideAngular(()=>{
+      this.zone.runOutsideAngular(()=>{
 
           
 // Create chart instance
+
+
 let chart = am4core.create("cuerpopartes", am4charts.XYChart);
+
 
 // Add data
 chart.data = [
   {
     "region": "Abdomen",
-    "state": "North Dakota",
-    "sales": 920
+    "state": "Muy delgada",
+    "sales": 3
   },
   {
     "region": "Abdomen",
-    "state": "Cara Dakota",
-    "sales": 1317
+    "state": "Delgada",
+    "sales": 11
   },
   {
     "region": "Abdomen",
-    "state": "Kansas",
-    "sales": 2916
+    "state": "Mediana",
+    "sales": 3
   },
   {
     "region": "Abdomen",
-    "state": "Iowa",
-    "sales": 4577
+    "state": "Gorda",
+    "sales": 1
+  },
+  
+  {
+    "region": "Abdomen",
+    "state": "Curvy",
+    "sales": 8
   },
   {
     "region": "Abdomen",
-    "state": "Nebraska",
-    "sales": 7464
+    "state": "Fit",
+    "sales": 4
   },
+
   {
-    "region": "Abdomen",
-    "state": "Oklahoma",
-    "sales": 19686
-  },
-  {
-    "region": "Abdomen",
-    "state": "Missouri",
-    "sales": 22207
-  },
-  {
-    "region": "Abdomen",
-    "state": "Minnesota",
-    "sales": 29865
-  },
-  {
-    "region": "Abdomen",
-    "state": "Wisconsin",
-    "sales": 32125
-  },
-  {
-    "region": "Abdomen",
-    "state": "Indiana",
-    "sales": 53549
-  },
-  {
-    "region": "Abdomen",
-    "state": "Michigan",
-    "sales": 76281
-  },
-  {
-    "region": "Abdomen",
-    "state": "Illinois",
-    "sales": 80162
-  },
-  {
-    "region": "Abdomen",
-    "state": "Texas",
-    "sales": 170187
+    "region": "Piernas",
+    "state": "P-Muy delgada",
+    "sales": 3
   },
   {
     "region": "Piernas",
-    "state": "West Virginia",
-    "sales": 1209
+    "state": "P-Delgada",
+    "sales": 16
   },
   {
     "region": "Piernas",
-    "state": "Maine",
-    "sales": 1270
+    "state": "P-Mediana",
+    "sales": 3
   },
   {
     "region": "Piernas",
-    "state": "District of Columbia",
-    "sales": 2866
+    "state": "P-Gorda",
+    "sales": 2
+  },
+  
+  {
+    "region": "Piernas",
+    "state": "P-Curvyy",
+    "sales": 9
   },
   {
     "region": "Piernas",
-    "state": "New Hampshire",
-    "sales": 7294
-  },
-  {
-    "region": "Piernas",
-    "state": "Vermont",
-    "sales": 8929
-  },
-  {
-    "region": "Piernas",
-    "state": "Connecticut",
-    "sales": 13386
-  },
-  {
-    "region": "Piernas",
-    "state": "Rhode Island",
-    "sales": 22629
-  },
-  {
-    "region": "Piernas",
-    "state": "Maryland",
-    "sales": 23707
-  },
-  {
-    "region": "Piernas",
-    "state": "Delaware",
-    "sales": 27453
-  },
-  {
-    "region": "Piernas",
-    "state": "Massachusetts",
-    "sales": 28639
-  },
-  {
-    "region": "Piernas",
-    "state": "New Jersey",
-    "sales": 35763
-  },
-  {
-    "region": "Piernas",
-    "state": "Ohio",
-    "sales": 78253
-  },
-  {
-    "region": "Piernas",
-    "state": "Pennsylvania",
-    "sales": 116522
-  },
-  {
-    "region": "Piernas",
-    "state": "New York",
-    "sales": 310914
+    "state": "P-Fit",
+    "sales": 4
+  },{
+    "region": "Cara",
+    "state": "C-Muy delgada",
+    "sales": 4
   },
   {
     "region": "Cara",
-    "state": "Cara Carolina",
-    "sales": 8483
+    "state": "C-Delgada",
+    "sales": 34
   },
   {
     "region": "Cara",
-    "state": "Louisiana",
-    "sales": 9219
+    "state": "C-Mediana",
+    "sales": 22
   },
   {
     "region": "Cara",
-    "state": "Mississippi",
-    "sales": 10772
+    "state": "C-Gorda",
+    "sales": 11
+  },
+  
+  {
+    "region": "Cara",
+    "state": "C-Curvyy",
+    "sales": 16
   },
   {
     "region": "Cara",
-    "state": "Arkansas",
-    "sales": 11678
+    "state": "C-Fit",
+    "sales": 5
   },
-  {
-    "region": "Cara",
-    "state": "Alabama",
-    "sales": 19511
-  },
-  {
-    "region": "Cara",
-    "state": "Tennessee",
-    "sales": 30662
-  },
-  {
-    "region": "Cara",
-    "state": "Kentucky",
-    "sales": 36598
-  },
-  {
-    "region": "Cara",
-    "state": "Georgia",
-    "sales": 49103
-  },
-  {
-    "region": "Cara",
-    "state": "North Carolina",
-    "sales": 55604
-  },
-  {
-    "region": "Cara",
-    "state": "Virginia",
-    "sales": 70641
-  },
-  {
-    "region": "Cara",
-    "state": "Florida",
-    "sales": 89479
-  },
-  {
-    "region": "West",
-    "state": "Wyoming",
-    "sales": 1603
-  },
-  {
-    "region": "West",
-    "state": "Idaho",
-    "sales": 4380
-  },
-  {
-    "region": "West",
-    "state": "New Mexico",
-    "sales": 4779
-  },
-  {
-    "region": "West",
-    "state": "Montana",
-    "sales": 5589
-  },
-  {
-    "region": "West",
-    "state": "Utah",
-    "sales": 11223
-  },
-  {
-    "region": "West",
-    "state": "Nevada",
-    "sales": 16729
-  },
-  {
-    "region": "West",
-    "state": "Oregon",
-    "sales": 17431
-  },
-  {
-    "region": "West",
-    "state": "Colorado",
-    "sales": 32110
-  },
-  {
-    "region": "West",
-    "state": "Arizona",
-    "sales": 35283
-  },
-  {
-    "region": "West",
-    "state": "Washington",
-    "sales": 138656
-  },
-  {
-    "region": "West",
-    "state": "California",
-    "sales": 457731
-  }
+  
+  
 ];
 
 // Create axes
@@ -483,9 +336,7 @@ series.columns.template.adapter.add("fill", function(fill, target) {
       case "Cara":
         return chart.colors.getIndex(2);
         break;
-      case "West":
-        return chart.colors.getIndex(3);
-        break;
+      
     }
   }
   return fill;
@@ -500,11 +351,11 @@ function addRange(label, start, end, color) {
   range.label.disabled = false;
   range.label.fill = color;
   range.label.location = 0;
-  range.label.dx = -130;
-  range.label.dy = 12;
+  range.label.dx = -115;
+  range.label.dy = 30;
   range.label.fontWeight = "bold";
   range.label.fontSize = 12;
-  range.label.horizontalCenter = "left"
+  range.label.horizontalCenter = "right"
   range.label.inside = true;
   
   range.grid.stroke = am4core.color("#396478");
@@ -518,13 +369,212 @@ function addRange(label, start, end, color) {
   range.locations.category = 1;
 }
 
-addRange("Abdomen", "Texas", "North Dakota", chart.colors.getIndex(0));
-addRange("Piernas", "New York", "West Virginia", chart.colors.getIndex(1));
-addRange("Cara", "Florida", "Cara Carolina", chart.colors.getIndex(2));
-addRange("West", "California", "Wyoming", chart.colors.getIndex(3));
+addRange("Abdomen", "Fit", "Muy Delgada", chart.colors.getIndex(0));
+addRange("Piernas", "P-Fit", "P-Muy Delgada", chart.colors.getIndex(1));
+addRange("Cara","C-Fit", "C-Muy Delgada", chart.colors.getIndex(2));
 
 chart.cursor = new am4charts.XYCursor();
         });
+
+      this.zone.runOutsideAngular(()=>{
+
+                        // Create chart instance
+              let chart = am4core.create("color-piel", am4charts.PieChart);
+
+              // Add and configure Series
+              let pieSeries = chart.series.push(new am4charts.PieSeries());
+              pieSeries.dataFields.value = "porc";
+              pieSeries.dataFields.category = "color";
+
+              // Let's cut a hole in our Pie chart the size of 30% the radius
+              chart.innerRadius = am4core.percent(30);
+
+              // Put a thick white border around each Slice
+              pieSeries.slices.template.stroke = am4core.color("#fff");
+              pieSeries.slices.template.strokeWidth = 2;
+              pieSeries.slices.template.strokeOpacity = 1;
+              pieSeries.slices.template
+
+                // change the cursor on hover to make it apparent the object can be interacted with
+                .cursorOverStyle = [
+                  {
+                    "property": "cursor",
+                    "value": "pointer"
+                  }
+                ];
+
+             
+              // Create a base filter effect (as if it's not there) for the hover to return to
+              let shadow = pieSeries.slices.template.filters.push(new am4core.DropShadowFilter);
+              shadow.opacity = 0;
+
+              // Create hover state
+              let hoverState = pieSeries.slices.template.states.getKey("hover"); // normally we have to create the hover state, in this case it already exists
+
+              // Slightly shift the shadow and make it more prominent on hover
+              let hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter);
+              hoverShadow.opacity = 0.7;
+              hoverShadow.blur = 5;
+
+              // Add a legend
+              chart.legend = new am4charts.Legend();
+
+              chart.data = [{
+                "color": "Blanca",
+                "porc": 362
+              },{
+                "color": "Cafe claro",
+                "porc": 123
+              }, {
+                "color": "Cafe medio",
+                "porc": 9
+              }];
+        });
+
+
+      this.zone.runOutsideAngular(()=>{
+          
+          // Themes end
+
+            let chart = am4core.create("maquillaje", am4charts.PieChart);
+            chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+
+            chart.data = [
+              {
+                country: "Sí",
+                value: 156
+              },
+              {
+                country: "No",
+                value: 349
+              },
+              
+             
+            ];
+            chart.radius = am4core.percent(70);
+            chart.innerRadius = am4core.percent(40);
+            chart.startAngle = 180;
+            chart.endAngle = 360;  
+
+            let series = chart.series.push(new am4charts.PieSeries());
+            series.dataFields.value = "value";
+            series.dataFields.category = "country";
+
+            series.slices.template.cornerRadius = 10;
+            series.slices.template.innerCornerRadius = 7;
+            series.slices.template.draggable = true;
+            series.slices.template.inert = true;
+            series.alignLabels = false;
+
+            series.hiddenState.properties.startAngle = 90;
+            series.hiddenState.properties.endAngle = 90;
+
+            chart.legend = new am4charts.Legend();
+
+
+
+        });
+
+      this.zone.runOutsideAngular(()=>{
+                    // Create chart instance
+            let chart = am4core.create("color-pelo", am4charts.XYChart);
+            chart.scrollbarX = new am4core.Scrollbar();
+
+            // Add data
+            chart.data = [{
+              "country": "Rubio",
+              "visits": 38
+            }, {
+              "country": "Morocho",
+              "visits": 31
+            }, {
+              "country": "Negro",
+              "visits": 25
+            }, {
+              "country": "Colorado",
+              "visits": 2
+            
+            }];
+
+            // Create axes
+            let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+            categoryAxis.dataFields.category = "country";
+            categoryAxis.renderer.grid.template.location = 0;
+            categoryAxis.renderer.minGridDistance = 30;
+            categoryAxis.renderer.labels.template.horizontalCenter = "right";
+            categoryAxis.renderer.labels.template.verticalCenter = "middle";
+            categoryAxis.renderer.labels.template.rotation = 270;
+            categoryAxis.tooltip.disabled = true;
+            categoryAxis.renderer.minHeight = 110;
+
+            let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+            valueAxis.renderer.minWidth = 50;
+
+            // Create series
+            let series = chart.series.push(new am4charts.ColumnSeries());
+            series.sequencedInterpolation = true;
+            series.dataFields.valueY = "visits";
+            series.dataFields.categoryX = "country";
+            series.tooltipText = "[{categoryX}: bold]{valueY}[/]";
+            series.columns.template.strokeWidth = 0;
+
+            series.tooltip.pointerOrientation = "vertical";
+
+            series.columns.template.column.cornerRadiusTopLeft = 10;
+            series.columns.template.column.cornerRadiusTopRight = 10;
+            series.columns.template.column.fillOpacity = 0.8;
+
+            // on hover, make corner radiuses bigger
+            let hoverState = series.columns.template.column.states.create("hover");
+            hoverState.properties.cornerRadiusTopLeft = 0;
+            hoverState.properties.cornerRadiusTopRight = 0;
+            hoverState.properties.fillOpacity = 1;
+
+            series.columns.template.adapter.add("fill", function(fill, target) {
+              return chart.colors.getIndex(target.dataItem.index);
+            });
+
+            // Cursor
+            chart.cursor = new am4charts.XYCursor();
+
+
+      });
+
+      this.zone.runOutsideAngular(()=>{
+        // Create chart instance
+            let chart = am4core.create("pelo-corporal", am4charts.PieChart);
+
+            // Add data
+            chart.data = [ {
+              "country": "Si",
+              "litres": 2
+            }, {
+              "country": "No",
+              "litres": 503
+            } ];
+
+            // Add and configure Series
+            let pieSeries = chart.series.push(new am4charts.PieSeries());
+            pieSeries.dataFields.value = "litres";
+            pieSeries.dataFields.category = "country";
+            pieSeries.slices.template.stroke = am4core.color("#fff");
+            pieSeries.slices.template.strokeWidth = 2;
+            pieSeries.slices.template.strokeOpacity = 1;
+
+            // This creates initial animation
+            pieSeries.hiddenState.properties.opacity = 1;
+            pieSeries.hiddenState.properties.endAngle = -90;
+            pieSeries.hiddenState.properties.startAngle = -90;
+
+
+      });
+
+      
+
+      
+
+      
+
     }
 
     
