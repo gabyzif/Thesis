@@ -568,6 +568,12 @@ chart.cursor = new am4charts.XYCursor();
 
 
       });
+      this.zone.runOutsideAngular(()=>{
+       
+        
+      });
+
+
 
       
 
