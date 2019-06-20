@@ -1,4 +1,9 @@
 
+$light:#ffffff;
+$dark:#000;
+$medium: #4a4a4a;
+$violet:#572086;
+$regular_padding: 5%;
 
 .container{
     margin: 3%;
@@ -20,3 +25,45 @@
 }
 
 
+#home-results{
+    
+
+    .container{
+
+        padding: 100px;
+
+        background-color: #572086;
+    
+        h1,h2,li,a{
+            color: $light;
+        }
+
+        ul{
+            list-style: disc;    
+        
+            li{
+                margin: 1%;
+                a{
+                    //padding: 3%;
+                    
+        
+                    &:hover{
+        
+                        text-decoration: underline;
+        
+                    }
+        
+        
+                }
+            }
+        }
+    }
+   
+}
+
+
+
+
+.sub-section{
+    padding: 7%;
+}

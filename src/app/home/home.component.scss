@@ -14,22 +14,29 @@ $regular_padding: 5%;
 
 }
 
+ul{
+    list-style: disc;    
+}
+
 
 .button{
     margin: 10px 10px 4px 0;
     
 }
 #home{
-    background-image: url("../../assets/img-girls/montage-sing.jpg");
+    background-image: url("../../assets/img-girls/montage.jpg");
    
    
     .container{
         background-color: $light;
         padding: $regular_padding;
+        max-width: calc(100% - 80px);
+
         
 
         h1,h2{
             color: $dark;
+            text-align: center;
             
         }
 
@@ -47,6 +54,7 @@ $regular_padding: 5%;
 
     .container{
         margin: 5% 3% 3% 3%; 
+        text-align: center;
         
         div{
             overflow: hidden;
@@ -62,7 +70,7 @@ $regular_padding: 5%;
                    
                 }
                 ul{
-                    list-style: disc;    
+                    list-style: none;    
                     margin: 3%;
     
                    

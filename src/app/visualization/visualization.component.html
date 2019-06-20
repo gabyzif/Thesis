@@ -6,31 +6,76 @@
           <h2 class="subtitle">Elegí la/s características que queres ver</h2>
           
           
-          <div class="columns ">
-            <div class="column is-gapless ">
+          <div class="columns is-mobile">
+            <div class="column is-half ">
                 <h3>Tipo de cuerpo</h3>
 
-                <div class="big-img flexbox">
-                    <div class="img">
-                        <input type="image" (click)="onClickTipoCuerpo('fit')" [ngClass]="{selected: tipoDeCuerpo.indexOf('fit')!=-1}" src="../../assets/visualization/fit.png">
-                        <input type="image" src="../../assets/visualization/muyflaca.png" (click)="onClickTipoCuerpo('muy delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('muy delgada')!=-1}">
-                        <input type="image" src="../../assets/visualization/flaca.png" (click)="onClickTipoCuerpo('delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('delgada')!=-1}">
-                    </div><div class="img">
+                <div>
+                  <figure (click)="onClickTipoCuerpo('fit')" [ngClass]="{selected: tipoDeCuerpo.indexOf('fit')!=-1}">
+                  <img  class="image-girls"  src="../../assets/visualization/fit.png" alt="Trulli" style="width:100%">
+                    <figcaption>Fit</figcaption>
+                </figure>
+                <figure (click)="onClickTipoCuerpo('muy delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('muy delgada')!=-1}">
+                  <img  class="image-girls" src="../../assets/visualization/muyflaca.png" alt="Trulli" style="width:100%">
+                  <figcaption>Muy Delgada</figcaption>
+                </figure>
+                <figure (click)="onClickTipoCuerpo('delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('delgada')!=-1}" >
+                  <img class="image-girls" src="../../assets/visualization/flaca.png" alt="Trulli" style="width:100%">
+                  <figcaption>Delgada</figcaption>
+                </figure>
+                <figure (click)="onClickTipoCuerpo('mediana')" [ngClass]="{selected: tipoDeCuerpo.indexOf('mediana')!=-1}">
+                  <img  class="image-girls" src="../../assets/visualization/mediana.png" alt="Trulli" style="width:100%">
+                  <figcaption>Mediana</figcaption>
+                </figure>
+                <figure (click)="onClickTipoCuerpo('con curvas')" [ngClass]="{selected: tipoDeCuerpo.indexOf('con curvas')!=-1}" >
+                  <img class="image-girls" src="../../assets/visualization/curvas.png" alt="Trulli" style="width:100%">
+                  <figcaption>Con Curvas</figcaption>
+                </figure>
+                <figure (click)="onClickTipoCuerpo('gorda')" [ngClass]="{selected: tipoDeCuerpo.indexOf('gorda')!=-1}">
+                  <img  class="image-girls" src="../../assets/visualization/gorda.png" alt="Trulli" style="width:100%">
+                  <figcaption>Gorda</figcaption>
+               </figure>
+                <figure>
+                  <img class="image-girls" src="../../assets/visualization/obesa.png" alt="Trulli" style="width:100%">
+                  <figcaption>Obesa</figcaption>
 
-                        <input type="image" src="../../assets/visualization/mediana.png" (click)="onClickTipoCuerpo('mediana')" [ngClass]="{selected: tipoDeCuerpo.indexOf('mediana')!=-1}">
-                        <input type="image" src="../../assets/visualization/gorda.png" (click)="onClickTipoCuerpo('gorda')" [ngClass]="{selected: tipoDeCuerpo.indexOf('gorda')!=-1}">
-                        <input type="image"  src="../../assets/visualization/curvas.png" (click)="onClickTipoCuerpo('con curvas')" [ngClass]="{selected: tipoDeCuerpo.indexOf('con curvas')!=-1}">
-                        <input type="image"  src="../../assets/visualization/curvas.png" (click)="onClickTipoCuerpo('con curvas')" [ngClass]="{selected: tipoDeCuerpo.indexOf('con curvas')!=-1}">
+                </figure>
 
-                    </div>
                 </div>
-              
+                
+                <!--- 
+                <div>
+                  <div  (click)="onClickTipoCuerpo('fit')" [ngClass]="{selected: tipoDeCuerpo.indexOf('fit')!=-1}" class="image-girls" style="background-image: url(../../assets/visualization/fit.png)" >
+                      <p>Fit</p>
+                  </div>
 
+                  <div class="image-girls"  (click)="onClickTipoCuerpo('muy delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('muy delgada')!=-1}" style="background-image: url(../../assets/visualization/muyflaca.png)">
+                     
+                      <p>Muy Flaca</p>
 
+                  </div>
+                  <div class="image-girls" (click)="onClickTipoCuerpo('delgada')" [ngClass]="{selected: tipoDeCuerpo.indexOf('delgada')!=-1}" style="background-image: url(../../assets/visualization/flaca.png)">
+                     
+                      <p>Flaca</p>
+                  </div>
+                  <div class="image-girls" (click)="onClickTipoCuerpo('mediana')" [ngClass]="{selected: tipoDeCuerpo.indexOf('mediana')!=-1}" style="background-image: url(../../assets/visualization/mediana.png)"  >
+                  
+                      <p>Mediana</p>
 
+                  </div>
+                  <div class="image-girls"  (click)="onClickTipoCuerpo('con curvas')" [ngClass]="{selected: tipoDeCuerpo.indexOf('con curvas')!=-1}"  style="background-image: url(../../assets/visualization/curvas.png)" >
+          
+                      <p>Curvas</p>
+                  </div>
+                  <div class="image-girls"  (click)="onClickTipoCuerpo('gorda')" [ngClass]="{selected: tipoDeCuerpo.indexOf('gorda')!=-1}" style="background-image: url(../../assets/visualization/gorda.png)">
+                    <p>Groda</p>
+                  </div>
+                  <div class="image-girls"  (click)="onClickTipoCuerpo('con curvas')" [ngClass]="{selected: tipoDeCuerpo.indexOf('con curvas')!=-1}" style="background-image: url(../../assets/visualization/obesa.png)" >
+                      <p>Obesa</p>
+                  </div>
 
-              
-
+                </div>-->
+                
             </div>
 
 
@@ -40,34 +85,80 @@
 
                 
 
-                <button (click)="onClickColorDePiel('blanco')" [ngClass]="{selected: colorDePiel.indexOf('blanco')!=-1}">
-                  <svg width="50" height="50">
-                    <rect width="50" height="50" style="fill:#FCE4D5;" />
-                  </svg></button>
-                <button (click)="onClickColorDePiel('cafe claro')" [ngClass]="{selected: colorDePiel.indexOf('cafe claro')!=-1}">
-                  <svg width="50" height="50">
-                    <rect width="50" height="50" style="fill:#FFBF99;" />
-                  </svg></button>
-                <button (click)="onClickColorDePiel('cafe medio')" [ngClass]="{selected: colorDePiel.indexOf('cafe medio')!=-1}">
+                <div>
+                  <figure (click)="onClickColorDePiel('blanco')" [ngClass]="{selected: colorDePiel.indexOf('blanco')!=-1}">
                     <svg width="50" height="50">
-                        <rect width="50" height="50" style="fill:#AF8270;" />
-                      </svg>
-                </button>
+                      <rect width="50" height="50" style="fill:#FCE4D5;" />
+                    </svg>
+                    <figcaption>Café Claro</figcaption>
+                  </figure>
+
+                  <figure (click)="onClickColorDePiel('cafe claro')" [ngClass]="{selected: colorDePiel.indexOf('cafe claro')!=-1}">
+                    <svg width="50" height="50">
+                      <rect width="50" height="50" style="fill:#FFBF99;" />
+                    </svg>
+                    <figcaption>Café medio</figcaption>
+                  </figure>
+
+                  <figure (click)="onClickColorDePiel('cafe medio')" [ngClass]="{selected: colorDePiel.indexOf('cafe medio')!=-1}">
+                    <svg width="50" height="50">
+                      <rect width="50" height="50" style="fill:#AF8270;" />
+                    </svg>
+                    <figcaption>Café oscuro</figcaption>
+                  </figure>
+
+
+                </div>
+              
                 
             </div>
 
             <div class="column">
 
                 <h3>Características de la piel</h3>
-                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('lunar')" [ngClass]="{selected: pielV.indexOf('lunar')!=-1}">
-                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('grano')" [ngClass]="{selected: pielV.indexOf('grano')!=-1}">
-                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('ojeras')" [ngClass]="{selected: pielV.indexOf('ojeras')!=-1}">
-                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('rosacea')" [ngClass]="{selected: pielV.indexOf('rosacea')!=-1}">
-                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('mancha solar')" [ngClass]="{selected: pielV.indexOf('mancha solar')!=-1}">
-                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('mancha')" [ngClass]="{selected: pielV.indexOf('mancha')!=-1}">
-                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('pecas')" [ngClass]="{selected: pielV.indexOf('pecas')!=-1}">
-                <input type="image" src="../../assets/visualization/skin-ex.png" (click)="onClickPiel('bolsas')" [ngClass]="{selected: pielV.indexOf('bolsas')!=-1}">
+                <figure (click)="onClickPiel('lunar')" [ngClass]="{selected: pielV.indexOf('lunar')!=-1}">
+                  <img src="../../assets/visualization/lunar.png" >
+                  <figcaption>lunar</figcaption>
+                </figure>
+
+                <figure   (click)="onClickPiel('grano')" [ngClass]="{selected: pielV.indexOf('grano')!=-1}">
+                  <img src="../../assets/visualization/granos.png" >
+                  <figcaption>grano</figcaption>
+                </figure>
+
+                <figure   (click)="onClickPiel('ojeras')" [ngClass]="{selected: pielV.indexOf('ojeras')!=-1}">
+                  <img src="../../assets/visualization/ojeras.png" >
+                  <figcaption>ojeras</figcaption>
+                </figure>
                 
+
+                <figure   (click)="onClickPiel('rosaseo')" [ngClass]="{selected: pielV.indexOf('rosaseo')!=-1}">
+                  <img src="../../assets/visualization/rosaseo.png" >
+                  <figcaption>rosaseo</figcaption>
+                </figure>
+
+                <figure   (click)="onClickPiel('mancha solar')" [ngClass]="{selected: pielV.indexOf('mancha solar')!=-1}">
+                  <img src="../../assets/visualization/manchasolar.png" >
+                  <figcaption>mancha solar</figcaption>
+                </figure>
+
+                <figure   (click)="onClickPiel('mancha')" [ngClass]="{selected: pielV.indexOf('mancha')!=-1}">
+                  <img src="../../assets/visualization/mancha.png" >
+                  <figcaption>mancha</figcaption>
+                </figure>
+
+                <figure   (click)="onClickPiel('pecas')" [ngClass]="{selected: pielV.indexOf('pecas')!=-1}">
+                  <img src="../../assets/visualization/pecas.png" >
+                  <figcaption>pecas</figcaption>
+                </figure>
+
+                <figure   (click)="onClickPiel('bolsas')" [ngClass]="{selected: pielV.indexOf('bolsas')!=-1}">
+                  <img src="../../assets/visualization/bolsas.png" >
+                  <figcaption>bolsas</figcaption>
+                </figure>
+
+
+               
                 
                 
             </div>
