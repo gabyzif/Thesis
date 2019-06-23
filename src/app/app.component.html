@@ -15,40 +15,11 @@
       <a class="navbar-item" fragment="inicio"routerLinkActive="active-link" [routerLink]="['home']">Home</a>
       <a class="navbar-item" fragment="proyecto" routerLinkActive="active-link" [routerLink]="['home']">Proyecto</a>
       <!--<a class="navbar-item"  fragment="proceso" routerLinkActive="active-link" [routerLink]="['home']">Proceso</a>  -->    
-      <div  class="navbar-item has-dropdown is-hoverable ">
-        <a id="drop" class="navbar-link navbar-item">
-          Visualizacion
-        </a>
-      
-        <div class="navbar-dropdown">
-          <a  fragment="visualizacion" routerLinkActive="active-link" [routerLink]="['home']" class="navbar-item">
-            Información
-          </a>
-          <a  routerLinkActive="active-link" [routerLink]="['visualization']" class="navbar-item">
-            Visualización
-          </a>
-          
-        </div>
-      </div>
-      
-      
-   
-      <div  class="navbar-item has-dropdown is-hoverable ">
-          <a id="drop" class="navbar-link navbar-item">
-            Resultados
-          </a>
-        
-          <div class="navbar-dropdown">
-            <a  fragment="resultados" routerLinkActive="active-link" [routerLink]="['home']" class="navbar-item">
-              Información
-            </a>
-            <a  routerLinkActive="active-link" [routerLink]="['project']" class="navbar-item">
-              Analisis y resultados
-            </a>
-            
-          </div>
-        </div>
-    <a class="navbar-item" fragment="contacto" routerLinkActive="active-link" [routerLink]="['home']">Contacto</a>    
+      <a class="navbar-item" routerLinkActive="active-link" [routerLink]="['visualization']">Visualizacion</a>
+      <a class="navbar-item" routerLinkActive="active-link" [routerLink]="['project']">Resultados</a>
+      <a class="navbar-item" fragment="contacto" routerLinkActive="active-link" [routerLink]="['home']">Contacto</a>    
+
+  
     </div>
   </div>
 
