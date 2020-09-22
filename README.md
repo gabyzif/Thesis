@@ -1,6 +1,10 @@
-# Beibis
+# Likeadas
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+
+Likeadas is my thesis: a visualization of how woman picture themselves in Instagram.
+
+You can check it live here: www.likeadas.gabyzif.com
 
 ## Development server
 
